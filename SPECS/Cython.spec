@@ -7,8 +7,8 @@
 %bcond_without cython_compile
 
 Name:           Cython
-Version:        0.29.22
-Release:        7%{?dist}
+Version:        0.29.37
+Release:        1%{?dist}
 Summary:        Language for writing Python extension modules
 
 License:        ASL 2.0
@@ -129,6 +129,10 @@ cp -p cython-mode-init.el cython-mode-init.elc %{buildroot}%{_emacs_sitestartdir
 
 
 %changelog
+* Mon Oct 07 2024 Pavel Simovec <psimovec@redhat.com> - 0.29.37-1
+- Update to 0.29.37
+- Resolves: RHEL-61659
+
 * Wed Feb 16 2022 Tomas Orsava <torsava@redhat.com> - 0.29.22-7
 - Add gating configuration and a simple smoke test
 - Related: rhbz#1950291
